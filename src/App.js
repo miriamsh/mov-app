@@ -4,6 +4,7 @@ import Movie from './pages/Movie';
 import MovieDetails from './pages/MovieDetails';
 import TvSeries from './pages/TvSeries';
 import UpcomingMovie from './components/homeone/UpcomingMovie';
+import Frame from './pages/frame';
 import { useEffect } from "react"
 import $ from "jquery";
 import Pricing from './pages/Pricing';
@@ -12,6 +13,7 @@ import BlogDetails from './pages/BlogDetails';
 import ContactPage from './pages/ContactPage';
 import { SignIn } from './pages/sign-in';
 import { SignUp } from './pages/sign-up';
+// import ContainerVideoPlayer from './pages/ContainerVideoPlayer';
 
 
 
@@ -28,6 +30,8 @@ function App() {
      
     });
   })
+
+
   return (
     <div className="App">
      <Router>
@@ -44,6 +48,14 @@ function App() {
           <Route exact={true} path="/upcoming-movie">
             <UpcomingMovie/>
           </Route>
+
+          <Route exact={true} path="/movie-frame">
+            <Frame/>
+          </Route>
+
+          {/* <Route exact={true} path="/video-player">
+            <ContainerVideoPlayer/>
+          </Route> */}
           
           <Route exact={true} path="/sign-in">
             <SignIn/>

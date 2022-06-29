@@ -1,0 +1,110 @@
+  
+  .v_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  .v_video {
+    width: 100%;
+  }
+  
+  .v_video-wrapper {
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .v_video-wrapper:hover .v_controls {
+    transform: translateY(0%);
+  }
+  
+  .v_controls {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 30px;
+    padding: 14px;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transform: translateY(150%);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .v_actions button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+  }
+  
+  .v_actions button i {
+    background-color: none;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .input-range{
+    -webkit-appearance: none ;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    height: 4px;
+    width: 350px;
+  }
+  
+  .input-range::-webkit-slider-thumb {
+    -webkit-appearance: none ;
+    cursor: pointer;
+    height: 6px;
+  }
+  
+  .input-range::-moz-range-progress {
+    background: white;
+  }
+  
+  .v_velocity {
+    appearance: none;
+    background: none;
+    color: white;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .v_mute-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .v_mute-btn i {
+    background-color: none;
+    color: white;
+    font-size: 20px;
+  }
+
+  .v_bx{
+    color: white ;
+  }

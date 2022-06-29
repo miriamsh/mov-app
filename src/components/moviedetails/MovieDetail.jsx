@@ -50,7 +50,8 @@ const MovieDetail = () => {
                   <h6>Prime Video</h6>
                   <span>Streaming Channels</span>
                 </li>
-                <li className="watch"><a href="https://www.youtube.com/" className="btn popup-video"><i className="fas fa-play" /> Watch Now</a></li>
+                {/* should be linked to a component */}
+                <li className="watch"><a href="/movie-frame" className="btn"><i className="fas fa-play" /> Watch Now</a></li>
               </ul>
             </div>
           </div>
